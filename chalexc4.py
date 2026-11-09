@@ -1,4 +1,4 @@
-from collections import deque
+ collections import deque
 
 def reverse_first(queue, k):
     stack = []
