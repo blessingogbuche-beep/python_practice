@@ -1,14 +1,13 @@
 def move_zeros(numbers):
     write = 0
-
-    for i in range(len(numbers)):
-        if numbers[i] != 0:
-            numbers[write] = numbers[i]
+    for num in numbers:
+        if num != 0:
+            numbers[write] = num
             write += 1
-
     for i in range(write, len(numbers)):
         numbers[i] = 0
 a = [ 0,1,0,3,12]
+
 move_zeros(a)
 print (a)
 
@@ -20,3 +19,12 @@ print(b)
 c = [1, 2, 3]
 move_zeros(c)
 print(c)
+
+
+
+
+
+
+
+
+ 
