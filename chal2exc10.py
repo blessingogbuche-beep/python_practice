@@ -6,8 +6,8 @@ def path_exists(graph, start, target):
         current = to_visit.pop()
 
         if current == target:
-            return True
-
+            return  True
+        
         if current in visited:
             continue
 
@@ -15,9 +15,7 @@ def path_exists(graph, start, target):
 
         for neighbour in graph[current]:
             to_visit.append(neighbour)
-
     return False
-
 
 graph = {
     "A": ["B", "C"],
@@ -28,5 +26,9 @@ graph = {
     "F": []
 }
 
-print(path_exists(graph, "A", "F"))
+print(path_exists(graph,"A", "F"))
 print(path_exists(graph, "D", "A"))
+
+
+
+
